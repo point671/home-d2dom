@@ -835,8 +835,8 @@ body {
 .prices__table {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 150px 1.8fr 1fr 1.8fr 1fr;
-  grid-template-columns: 150px 1.8fr 1fr 1.8fr 1fr;
+  -ms-grid-columns: minmax(180px, auto) 1.8fr 1fr 1.8fr 1fr;
+  grid-template-columns: minmax(180px, auto) 1.8fr 1fr 1.8fr 1fr;
   width: 100%;
   min-width: 1000px;
   gap: 0;
