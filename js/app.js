@@ -292,7 +292,6 @@
                 e.preventDefault();
                 const area = parseFloat(document.getElementById("area").value || "0");
                 const repairType = document.getElementById("repairType").value;
-                const materials = document.getElementById("materials").value;
                 const facade = document.getElementById("facade").checked;
                 const roof = document.getElementById("roof").checked;
                 const engineering = document.getElementById("engineering").checked;
@@ -306,12 +305,11 @@
                 if (roof) rate += optionAddons.roof;
                 if (engineering) rate += optionAddons.engineering;
                 const workCost = area * rate;
-                const materialsCoeff = materials === "company" ? 2.7 : 1;
-                const totalCost = workCost * materialsCoeff;
+                const totalCost = workCost * 2.7;
                 const format = value => value.toLocaleString("ru-RU", {
                     maximumFractionDigits: 0
                 });
-                resultBlock.innerHTML = `\n                <h3>Ориентировочный расчёт</h3>\n                <p>Стоимость работ: <strong>${format(workCost)} ₽</strong></p>\n                ${materials === "company" ? `<p>Оценочный бюджет с материалами: <strong>${format(totalCost)} ₽</strong></p>` : `<p class="calculator__result-estimate">При заказе материалов у нас ориентировочный бюджет составит <strong>${format(workCost * 2.7)} ₽</strong></p>`}\n                <p><small>Расчёт предварительный и не является публичной офертой. Точная стоимость рассчитывается после выезда инженера-сметчика на объект.</small></p>\n            `;
+                resultBlock.innerHTML = `\n                <h3>Ориентировочный расчёт</h3>\n                <p>Стоимость работ: <strong>${format(workCost)} ₽</strong></p>\n                <p class="calculator__result-estimate">При заказе материалов у нас ориентировочный бюджет составит <strong>${format(totalCost)} ₽</strong></p>\n                <p><small>Расчёт предварительный и не является публичной офертой. Точная стоимость рассчитывается после выезда инженера-сметчика на объект.</small></p>\n            `;
             });
         }
     });

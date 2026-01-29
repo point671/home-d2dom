@@ -266,19 +266,6 @@ Template Post Type: post, page, product
                                             </svg>
                                         </div>
 
-                                        <div class="calculator__input-group calculator__select-wrapper">
-                                            <select id="materials" class="calculator__select">
-                                                <option value="" disabled selected>Материалы</option>
-                                                <option value="client">Материалы клиента</option>
-                                                <option value="company">Материалы компании</option>
-                                            </select>
-                                            <svg class="calculator__select-arrow" width="14" height="8"
-                                                viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M1 1L7 7L13 1" stroke="white" stroke-width="1.5"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg>
-                                        </div>
-
                                         <button type="submit" class="btn btn--primary calculator__btn">Рассчитать
                                             стоимость</button>
                                     </div>
