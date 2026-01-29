@@ -674,7 +674,7 @@ body {
   transition: -webkit-transform .3s ease;
   transition: transform .3s ease;
   transition: transform .3s ease, -webkit-transform .3s ease;
-  cursor: pointer;
+
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #45484a;
@@ -684,11 +684,7 @@ body {
   background: rgba(153,153,153,.3),rgba(51,51,51,.45),#000,rgba(255,255,255,.08);
 }
 
-.repair-card:hover {
-  -webkit-transform: translateY(-5px);
-      -ms-transform: translateY(-5px);
-          transform: translateY(-5px);
-}
+
 
 .repair-card__image-wrapper {
   position: relative;
@@ -705,11 +701,7 @@ body {
   border-radius: 30px;
 }
 
-.repair-card:hover .repair-card__image {
-  -webkit-transform: scale(1.05);
-      -ms-transform: scale(1.05);
-          transform: scale(1.05);
-}
+
 
 .repair-card__overlay-gradient {
   display: none;
@@ -1444,7 +1436,7 @@ body {
   transition: -webkit-transform .3s ease;
   transition: transform .3s ease;
   transition: transform .3s ease, -webkit-transform .3s ease;
-  cursor: pointer;
+
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #45484a;
@@ -1454,11 +1446,7 @@ body {
   background: rgba(153,153,153,.3),rgba(51,51,51,.45),#000,rgba(255,255,255,.08);
 }
 
-.project-card:hover {
-  -webkit-transform: translateY(-5px);
-      -ms-transform: translateY(-5px);
-          transform: translateY(-5px);
-}
+
 
 .project-card__image-wrapper {
   position: relative;
@@ -1475,11 +1463,7 @@ body {
   border-radius: 30px;
 }
 
-.project-card:hover .project-card__image {
-  -webkit-transform: scale(1.05);
-      -ms-transform: scale(1.05);
-          transform: scale(1.05);
-}
+
 
 .project-card__content {
   padding: 30px 18px 50px 18px;
@@ -1521,10 +1505,7 @@ body {
   white-space: nowrap;
 }
 
-.project-card:hover .project-card__badge {
-  max-width: 300px;
-  padding-right: 20px;
-}
+
 
 .project-card__badge-icon {
   width: 36px;
@@ -1566,13 +1547,7 @@ body {
           transform: translateX(10px);
 }
 
-.project-card:hover .project-card__badge-text {
-  opacity: 1;
-  margin-left: 12px;
-  -webkit-transform: translateX(0);
-      -ms-transform: translateX(0);
-          transform: translateX(0);
-}
+
 
 .project-card__title {
   margin: 0 0 20px 0;
